@@ -44,6 +44,7 @@ msgstr ""
 "transferencia de correo) y :rfc:`1869` (Extensiones de servicio SMTP)."
 
 #: ../Doc/includes/wasm-notavail.rst:3
+#, fuzzy
 msgid ":ref:`Availability <availability>`: not Emscripten, not WASI."
 msgstr ":ref:`Availability <availability>`: ni Emscripten, ni WASI."
 
