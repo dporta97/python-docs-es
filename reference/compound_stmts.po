@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-10-12 19:43+0200\n"
-"PO-Revision-Date: 2023-12-13 18:37+0100\n"
+"PO-Revision-Date: 2024-11-18 15:17-0300\n"
 "Last-Translator: Carlos A. Crespo <lvccrespo@gmail.com>\n"
 "Language-Team: python-doc-es\n"
 "Language: es_AR\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.13.0\n"
-"X-Generator: Poedit 3.4.1\n"
+"X-Generator: Poedit 3.0.1\n"
 
 #: ../Doc/reference/compound_stmts.rst:5
 msgid "Compound statements"
@@ -237,7 +237,6 @@ msgstr ""
 "las realizadas en la suite del bucle ``for``::"
 
 #: ../Doc/reference/compound_stmts.rst:193
-#, fuzzy
 msgid ""
 "Names in the target list are not deleted when the loop is finished, but if "
 "the sequence is empty, they will not have been assigned to at all by the "
@@ -246,10 +245,10 @@ msgid ""
 "yields 0, 1, and then 2."
 msgstr ""
 "Los nombres en la lista no se eliminan cuando finaliza el bucle, pero si la "
-"secuencia está vacía, el bucle no les habrá asignado nada. Sugerencia: la "
-"función incorporada :func:`range` retorna un iterador de enteros adecuado "
-"para emular el efecto de Pascal ``for i := a to b do``; por ejemplo, "
-"``list(range(3))`` retorna la lista ``[0, 1, 2]``."
+"secuencia está vacía, el bucle no les habrá asignado nada. Sugerencia: el "
+"tipo incorporado :func:`range` representa secuencias aritméticas inmutables "
+"de números enteros; por ejemplo, iterar sobre ``range(3)`` genera "
+"sucesivamente 0, 1, y luego 2."
 
 #: ../Doc/reference/compound_stmts.rst:198
 msgid "Starred elements are now allowed in the expression list."
@@ -610,7 +609,6 @@ msgstr ""
 "valor de retorno de :meth:`__enter__`."
 
 #: ../Doc/reference/compound_stmts.rst:503
-#, fuzzy
 msgid ""
 "The :keyword:`with` statement guarantees that if the :meth:`__enter__` "
 "method returns without an error, then :meth:`__exit__` will always be "
@@ -621,8 +619,8 @@ msgstr ""
 "La sentencia :keyword:`with` garantiza que si el método :meth:`__enter__` "
 "regresa sin error, entonces siempre se llamará a :meth:`__exit__`. Por lo "
 "tanto, si se produce un error durante la asignación a la lista de destino, "
-"se tratará de la misma manera que si se produciría un error dentro de la "
-"suite. Vea el paso 6 a continuación."
+"se tratará de la misma manera que si el error ocurriera dentro del bloque de "
+"instrucciones. Vea el paso 7 a continuación."
 
 #: ../Doc/reference/compound_stmts.rst:509
 msgid "The suite is executed."
@@ -2554,9 +2552,8 @@ msgstr "Las funciones genéricas son declaradas de la siguiente forma::"
 
 #: ../Doc/reference/compound_stmts.rst:1715
 #: ../Doc/reference/compound_stmts.rst:1775
-#, fuzzy
 msgid "This syntax is equivalent to::"
-msgstr "Es semánticamente equivalente a::"
+msgstr "Esta sintaxis es equivalente a::"
 
 #: ../Doc/reference/compound_stmts.rst:1724
 msgid ""
@@ -2638,20 +2635,20 @@ msgstr ""
 "ejemplo::"
 
 #: ../Doc/reference/compound_stmts.rst:1798
-#, fuzzy
 msgid "This is equivalent to::"
-msgstr "es equivalente a ::"
+msgstr "Esto es equivalente a::"
 
 #: ../Doc/reference/compound_stmts.rst:1811
 msgid "Generic type aliases"
 msgstr "Alias de tipo genérico"
 
 #: ../Doc/reference/compound_stmts.rst:1813
-#, fuzzy
 msgid ""
 "The :keyword:`type` statement can also be used to create a generic type "
 "alias::"
-msgstr "La sentencia :keyword:`if` se usa para la ejecución condicional:"
+msgstr ""
+"La declaración :keyword:`type` también se puede usar para crear un alias de "
+"tipo genérico::"
 
 #: ../Doc/reference/compound_stmts.rst:1817
 msgid ""
@@ -2796,7 +2793,7 @@ msgstr ""
 
 #: ../Doc/reference/compound_stmts.rst:7
 msgid "compound"
-msgstr "compuesto"
+msgstr "compound"
 
 #: ../Doc/reference/compound_stmts.rst:7 ../Doc/reference/compound_stmts.rst:86
 #: ../Doc/reference/compound_stmts.rst:111
@@ -2814,31 +2811,31 @@ msgstr "compuesto"
 #: ../Doc/reference/compound_stmts.rst:1518
 #: ../Doc/reference/compound_stmts.rst:1563
 msgid "statement"
-msgstr "declaración"
+msgstr "statement"
 
 #: ../Doc/reference/compound_stmts.rst:21
 msgid "clause"
-msgstr "cláusula"
+msgstr "clause"
 
 #: ../Doc/reference/compound_stmts.rst:21
 msgid "suite"
-msgstr "traje"
+msgstr "suite"
 
 #: ../Doc/reference/compound_stmts.rst:21
 msgid "; (semicolon)"
-msgstr "; (punto y coma)"
+msgstr "; (semicolon)"
 
 #: ../Doc/reference/compound_stmts.rst:64
 msgid "NEWLINE token"
-msgstr "token *NEWLINE*"
+msgstr "NEWLINE token"
 
 #: ../Doc/reference/compound_stmts.rst:64
 msgid "DEDENT token"
-msgstr "token *DEDENT*"
+msgstr "DEDENT token"
 
 #: ../Doc/reference/compound_stmts.rst:64
 msgid "dangling"
-msgstr "colgando"
+msgstr "dangling"
 
 #: ../Doc/reference/compound_stmts.rst:64
 #: ../Doc/reference/compound_stmts.rst:86
@@ -2847,12 +2844,12 @@ msgstr "colgando"
 #: ../Doc/reference/compound_stmts.rst:207
 #: ../Doc/reference/compound_stmts.rst:389
 msgid "else"
-msgstr "*else*"
+msgstr "else"
 
 #: ../Doc/reference/compound_stmts.rst:86
 #: ../Doc/reference/compound_stmts.rst:587
 msgid "if"
-msgstr "*if*"
+msgstr "if"
 
 #: ../Doc/reference/compound_stmts.rst:86
 #: ../Doc/reference/compound_stmts.rst:111
@@ -2865,11 +2862,11 @@ msgstr "*if*"
 #: ../Doc/reference/compound_stmts.rst:587
 #: ../Doc/reference/compound_stmts.rst:1494
 msgid "keyword"
-msgstr "*keyword*"
+msgstr "keyword"
 
 #: ../Doc/reference/compound_stmts.rst:86
 msgid "elif"
-msgstr "*elif*"
+msgstr "elif"
 
 #: ../Doc/reference/compound_stmts.rst:86
 #: ../Doc/reference/compound_stmts.rst:111
@@ -2881,7 +2878,7 @@ msgstr "*elif*"
 #: ../Doc/reference/compound_stmts.rst:1318
 #: ../Doc/reference/compound_stmts.rst:1374
 msgid ": (colon)"
-msgstr ": (dos puntos)"
+msgstr ": (colon)"
 
 #: ../Doc/reference/compound_stmts.rst:86
 #: ../Doc/reference/compound_stmts.rst:111
@@ -2892,165 +2889,165 @@ msgstr ": (dos puntos)"
 #: ../Doc/reference/compound_stmts.rst:1192
 #: ../Doc/reference/compound_stmts.rst:1374
 msgid "compound statement"
-msgstr "sentencias compuestas"
+msgstr "compound statement"
 
 #: ../Doc/reference/compound_stmts.rst:111
 msgid "while"
-msgstr "*while*"
+msgstr "while"
 
 #: ../Doc/reference/compound_stmts.rst:111
 #: ../Doc/reference/compound_stmts.rst:144
 msgid "loop"
-msgstr "*loop*"
+msgstr "loop"
 
 #: ../Doc/reference/compound_stmts.rst:129
 #: ../Doc/reference/compound_stmts.rst:169
 #: ../Doc/reference/compound_stmts.rst:389
 #: ../Doc/reference/compound_stmts.rst:436
 msgid "break"
-msgstr "*break*"
+msgstr "break"
 
 #: ../Doc/reference/compound_stmts.rst:129
 #: ../Doc/reference/compound_stmts.rst:169
 #: ../Doc/reference/compound_stmts.rst:389
 #: ../Doc/reference/compound_stmts.rst:436
 msgid "continue"
-msgstr "continuar"
+msgstr "continue"
 
 #: ../Doc/reference/compound_stmts.rst:144
 msgid "for"
-msgstr "*for*"
+msgstr "for"
 
 #: ../Doc/reference/compound_stmts.rst:144
 msgid "in"
-msgstr "*in*"
+msgstr "in"
 
 #: ../Doc/reference/compound_stmts.rst:144
 msgid "target"
-msgstr "*target*"
+msgstr "target"
 
 #: ../Doc/reference/compound_stmts.rst:144
 msgid "list"
-msgstr "*list*"
+msgstr "list"
 
 #: ../Doc/reference/compound_stmts.rst:144
 #: ../Doc/reference/compound_stmts.rst:299
 #: ../Doc/reference/compound_stmts.rst:1192
 #: ../Doc/reference/compound_stmts.rst:1374
 msgid "object"
-msgstr "*object*"
+msgstr "object"
 
 #: ../Doc/reference/compound_stmts.rst:144
 msgid "sequence"
-msgstr "secuencia"
+msgstr "sequence"
 
 #: ../Doc/reference/compound_stmts.rst:190
 msgid "built-in function"
-msgstr "función incorporada"
+msgstr "built-in function"
 
 #: ../Doc/reference/compound_stmts.rst:190
 msgid "range"
-msgstr "*range*"
+msgstr "range"
 
 #: ../Doc/reference/compound_stmts.rst:207
 msgid "try"
-msgstr "*try*"
+msgstr "try"
 
 #: ../Doc/reference/compound_stmts.rst:207
 msgid "except"
-msgstr "*except*"
+msgstr "except"
 
 #: ../Doc/reference/compound_stmts.rst:207
 #: ../Doc/reference/compound_stmts.rst:407
 msgid "finally"
-msgstr "finalmente"
+msgstr "finally"
 
 #: ../Doc/reference/compound_stmts.rst:207
 #: ../Doc/reference/compound_stmts.rst:266
 #: ../Doc/reference/compound_stmts.rst:470
 #: ../Doc/reference/compound_stmts.rst:587
 msgid "as"
-msgstr "*as*"
+msgstr "as"
 
 #: ../Doc/reference/compound_stmts.rst:266
 msgid "except clause"
-msgstr "cláusula :keyword:`!except`"
+msgstr "except clause"
 
 #: ../Doc/reference/compound_stmts.rst:299
 msgid "module"
-msgstr "*module*"
+msgstr "module"
 
 #: ../Doc/reference/compound_stmts.rst:299
 msgid "sys"
-msgstr "*sys*"
+msgstr "sys"
 
 #: ../Doc/reference/compound_stmts.rst:299
 msgid "traceback"
-msgstr "*traceback*"
+msgstr "traceback"
 
 #: ../Doc/reference/compound_stmts.rst:328
 msgid "except_star"
-msgstr "*except_star*"
+msgstr "except_star"
 
 #: ../Doc/reference/compound_stmts.rst:389
 #: ../Doc/reference/compound_stmts.rst:436
 msgid "return"
-msgstr "*return*"
+msgstr "return"
 
 #: ../Doc/reference/compound_stmts.rst:470
 msgid "with"
-msgstr "*with*"
+msgstr "with"
 
 #: ../Doc/reference/compound_stmts.rst:470
 msgid "with statement"
-msgstr "sentencia :keyword:`!with`"
+msgstr "with statement"
 
 #: ../Doc/reference/compound_stmts.rst:470
 #: ../Doc/reference/compound_stmts.rst:1192
 #: ../Doc/reference/compound_stmts.rst:1374
 msgid ", (comma)"
-msgstr ", (coma)"
+msgstr ", (comma)"
 
 #: ../Doc/reference/compound_stmts.rst:587
 msgid "match"
-msgstr "*math*"
+msgstr "match"
 
 #: ../Doc/reference/compound_stmts.rst:587
 msgid "case"
-msgstr "*case*"
+msgstr "case"
 
 #: ../Doc/reference/compound_stmts.rst:587
 msgid "pattern matching"
-msgstr "concordancia de patrones"
+msgstr "pattern matching"
 
 #: ../Doc/reference/compound_stmts.rst:587
 msgid "match statement"
-msgstr "declaración de coincidencia"
+msgstr "match statement"
 
 #: ../Doc/reference/compound_stmts.rst:691
 msgid "guard"
-msgstr "protección"
+msgstr "guard"
 
 #: ../Doc/reference/compound_stmts.rst:730
 msgid "irrefutable case block"
-msgstr "bloques de casos irrefutables"
+msgstr "irrefutable case block"
 
 #: ../Doc/reference/compound_stmts.rst:730
 msgid "case block"
-msgstr "bloques de casos"
+msgstr "case block"
 
 #: ../Doc/reference/compound_stmts.rst:754
 msgid "! patterns"
-msgstr "! patrones"
+msgstr "! patterns"
 
 #: ../Doc/reference/compound_stmts.rst:754
 msgid "AS pattern, OR pattern, capture pattern, wildcard pattern"
-msgstr "Patrón AS, patrón OR, patrón de captura, patrón comodín"
+msgstr "AS pattern, OR pattern, capture pattern, wildcard pattern"
 
 #: ../Doc/reference/compound_stmts.rst:1183
 #: ../Doc/reference/compound_stmts.rst:1268
 msgid "parameter"
-msgstr "*parameter*"
+msgstr "parameter"
 
 #: ../Doc/reference/compound_stmts.rst:1183
 #: ../Doc/reference/compound_stmts.rst:1192
@@ -3058,73 +3055,73 @@ msgstr "*parameter*"
 #: ../Doc/reference/compound_stmts.rst:1268
 #: ../Doc/reference/compound_stmts.rst:1297
 msgid "function definition"
-msgstr "definiciones de función"
+msgstr "function definition"
 
 #: ../Doc/reference/compound_stmts.rst:1192
 msgid "def"
-msgstr "*def*"
+msgstr "def"
 
 #: ../Doc/reference/compound_stmts.rst:1192
 #: ../Doc/reference/compound_stmts.rst:1318
 msgid "function"
-msgstr "*function*"
+msgstr "function"
 
 #: ../Doc/reference/compound_stmts.rst:1192
 #: ../Doc/reference/compound_stmts.rst:1374
 msgid "definition"
-msgstr "definición"
+msgstr "definition"
 
 #: ../Doc/reference/compound_stmts.rst:1192
 #: ../Doc/reference/compound_stmts.rst:1374
 msgid "name"
-msgstr "*name*"
+msgstr "name"
 
 #: ../Doc/reference/compound_stmts.rst:1192
 #: ../Doc/reference/compound_stmts.rst:1374
 msgid "binding"
-msgstr "vinculante"
+msgstr "binding"
 
 #: ../Doc/reference/compound_stmts.rst:1192
 msgid "user-defined function"
-msgstr "función definida por el usuario"
+msgstr "user-defined function"
 
 #: ../Doc/reference/compound_stmts.rst:1192
 #: ../Doc/reference/compound_stmts.rst:1374
 msgid "() (parentheses)"
-msgstr "() (paréntesis)"
+msgstr "() (parentheses)"
 
 #: ../Doc/reference/compound_stmts.rst:1192
 msgid "parameter list"
-msgstr "lista de parámetros"
+msgstr "parameter list"
 
 #: ../Doc/reference/compound_stmts.rst:1233
 #: ../Doc/reference/compound_stmts.rst:1424
 msgid "@ (at)"
-msgstr "@ (arroba)"
+msgstr "@ (at)"
 
 #: ../Doc/reference/compound_stmts.rst:1268
 msgid "default"
-msgstr "por defecto"
+msgstr "default"
 
 #: ../Doc/reference/compound_stmts.rst:1268
 msgid "value"
-msgstr "valor"
+msgstr "value"
 
 #: ../Doc/reference/compound_stmts.rst:1268
 msgid "argument"
-msgstr "argumento"
+msgstr "argument"
 
 #: ../Doc/reference/compound_stmts.rst:1268
 msgid "= (equals)"
-msgstr "=(igual)"
+msgstr "= (equals)"
 
 #: ../Doc/reference/compound_stmts.rst:1297
 msgid "/ (slash)"
-msgstr "/ (barra)"
+msgstr "/ (slash)"
 
 #: ../Doc/reference/compound_stmts.rst:1297
 msgid "* (asterisk)"
-msgstr "* (asterisco)"
+msgstr "* (asterisk)"
 
 #: ../Doc/reference/compound_stmts.rst:1297
 msgid "**"
@@ -3132,7 +3129,7 @@ msgstr "**"
 
 #: ../Doc/reference/compound_stmts.rst:1318
 msgid "annotations"
-msgstr "anotaciones"
+msgstr "annotations"
 
 #: ../Doc/reference/compound_stmts.rst:1318
 msgid "->"
@@ -3140,7 +3137,7 @@ msgstr "->"
 
 #: ../Doc/reference/compound_stmts.rst:1318
 msgid "function annotations"
-msgstr "anotaciones de función"
+msgstr "function annotations"
 
 #: ../Doc/reference/compound_stmts.rst:1336
 msgid "lambda"
@@ -3148,23 +3145,23 @@ msgstr "lambda"
 
 #: ../Doc/reference/compound_stmts.rst:1336
 msgid "expression"
-msgstr "expresión"
+msgstr "expression"
 
 #: ../Doc/reference/compound_stmts.rst:1374
 msgid "class"
-msgstr "*class*"
+msgstr "class"
 
 #: ../Doc/reference/compound_stmts.rst:1374
 msgid "execution"
-msgstr "ejecución"
+msgstr "execution"
 
 #: ../Doc/reference/compound_stmts.rst:1374
 msgid "frame"
-msgstr "*frame*"
+msgstr "frame"
 
 #: ../Doc/reference/compound_stmts.rst:1374
 msgid "inheritance"
-msgstr "herencia"
+msgstr "inheritance"
 
 #: ../Doc/reference/compound_stmts.rst:1374
 msgid "docstring"
@@ -3173,52 +3170,32 @@ msgstr "docstring"
 #: ../Doc/reference/compound_stmts.rst:1374
 #: ../Doc/reference/compound_stmts.rst:1424
 msgid "class definition"
-msgstr "definición de clase"
+msgstr "class definition"
 
 #: ../Doc/reference/compound_stmts.rst:1374
 msgid "expression list"
-msgstr "lista de expresiones"
+msgstr "expression list"
 
 #: ../Doc/reference/compound_stmts.rst:1484
 msgid "async def"
-msgstr "definición asíncrona"
+msgstr "async def"
 
 #: ../Doc/reference/compound_stmts.rst:1494
 msgid "async"
-msgstr "asíncrono"
+msgstr "async"
 
 #: ../Doc/reference/compound_stmts.rst:1494
 msgid "await"
-msgstr "espere"
+msgstr "await"
 
 #: ../Doc/reference/compound_stmts.rst:1518
 msgid "async for"
-msgstr "asíncrono para"
+msgstr "async for"
 
 #: ../Doc/reference/compound_stmts.rst:1563
 msgid "async with"
-msgstr "asíncrono con"
+msgstr "async with"
 
 #: ../Doc/reference/compound_stmts.rst:1617
 msgid "type parameters"
-msgstr "tipo de parámetros"
-
-#~ msgid ""
-#~ "Before an :keyword:`!except` clause's suite is executed, details about "
-#~ "the exception are stored in the :mod:`sys` module and can be accessed "
-#~ "via :func:`sys.exc_info`. :func:`sys.exc_info` returns a 3-tuple "
-#~ "consisting of the exception class, the exception instance and a traceback "
-#~ "object (see section :ref:`types`) identifying the point in the program "
-#~ "where the exception occurred.  The details about the exception accessed "
-#~ "via :func:`sys.exc_info` are restored to their previous values when "
-#~ "leaving an exception handler::"
-#~ msgstr ""
-#~ "Antes de que se ejecute un conjunto de cláusulas :keyword:`!except`, los "
-#~ "detalles sobre la excepción se almacenan en el módulo :mod:`sys` y se "
-#~ "puede acceder a ellos a través de :func:`sys.exc_info`. :func:`sys."
-#~ "exc_info` devuelve una tupla de 3 que consta de la clase de excepción, la "
-#~ "instancia de excepción y un objeto de rastreo (consulte la sección :ref:"
-#~ "`types`) que identifica el punto del programa donde se produjo la "
-#~ "excepción. Los detalles sobre la excepción a la que se accede a través "
-#~ "de :func:`sys.exc_info` se restauran a sus valores anteriores cuando se "
-#~ "deja un controlador de excepciones:"
+msgstr "type parameters"
